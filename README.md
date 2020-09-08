@@ -1,5 +1,5 @@
 # LoopModule
-Create efficient loops using `RunService.RenderStepped`
+Create efficient client sided loops using `RunService.RenderStepped`
 
 
 
