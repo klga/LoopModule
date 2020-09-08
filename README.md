@@ -10,9 +10,7 @@ Returns a loop object connected to a callback function with optional arguments. 
 
 `LoopObject:Bind(t)`
 
-Binds the loop object to `RenderStepped`. 
-
-Callback will loop in the interval `t` (seconds).
+Binds the loop object to `RenderStepped`. Callback will loop in the interval `t` (seconds).
 
 `LoopObject:Unbind()`
 
