@@ -6,12 +6,12 @@ end
 
 local testLoop = loop.new(test,"hi")
 
-local function oLC(i)
+local function iterationComplete(i)
 	if i >= 4 then
 		testLoop:Unbind()
 	end
 end
 
-testLoop:OnIteration(oLC)
+testLoop:OnIteration(iterationComplete)
 
 testLoop:Bind(1)
