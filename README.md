@@ -1,5 +1,5 @@
 # LoopModule
-Create client sided loops using `RunService.RenderStepped`
+Create client sided loops for roblox using `RunService.RenderStepped`
 
 
 
