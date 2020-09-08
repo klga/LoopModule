@@ -45,19 +45,22 @@ function loop:Bind(frequency)
 	game:GetService("RunService"):BindToRenderStep(self.id,Enum.RenderPriority.First.Value,toBind)
 end
 
-function loop:Unbind()
+function loop:Unbind(silent)
 	local success,err = pcall(function()
 		game:GetService("RunService"):UnbindFromRenderStep(self.id)
 	end)
 	
-	if not success then
+	if not success and not silent then
 		warn(string.format("Unable to unbind loop: %s", err))
 	end
-	
+end
+
+function loop:Destroy()
+	self:Unbind(true)
 	self = nil
 end
 
-function loop:onIteration(callback)
+function loop:OnIteration(callback)
 	self.completionCallback = callback
 end
 
