@@ -11,7 +11,7 @@ Supports multiple arguments.
 
 `LoopObject:Bind(t)`
 
-Binds the loop object to `RenderStepped`, callback will loop in the interval `t`.
+Binds the loop object to `RenderStepped`, callback will loop in the interval `t` (seconds).
 
 `LoopObject:Unbind()`
 
