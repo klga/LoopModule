@@ -11,9 +11,7 @@ Returns a loop object connected to a callback function with optional arguments.
 Callback is run in a loop once it is binded.
 
 Supports multiple arguments.
-
-
-
+\n
 `LoopObject:Bind(t)`
 
 Binds the loop object to `RenderStepped`. 
