@@ -25,7 +25,7 @@ function loop:Bind(frequency)
 	
 	local function toBind(dt)
 		if self.frequency < dt then
-			warn(string.format("delta time exceeded loop frequency, using minimum: %.6f", dt))
+			--warn(string.format("delta time exceeded loop frequency, using minimum: %.6f", dt))
 		end
 		
 		self.elapsed += dt
